@@ -34,32 +34,32 @@ class _MapPageState extends State<MapPage> {
         child: Stack(
           children: [
             Positioned(
-              top: 250,
+              top: 230,
               left: 80,
               child: PinMarker(text: "10,3 mn P", showText: showText),
             ),
             Positioned(
-              top: 320,
+              top: 300,
               left: 130,
               child: PinMarker(text: "11 mn P", showText: showText),
             ),
             Positioned(
-              top: 345,
+              top: 325,
               left: 260,
               child: PinMarker(text: "7,8 mn P", showText: showText),
             ),
             Positioned(
-              top: 500,
+              top: 470,
               left: 80,
               child: PinMarker(text: "13,3 mn P", showText: showText),
             ),
             Positioned(
-              top: 450,
+              top: 420,
               left: 250,
               child: PinMarker(text: "8,5 mn P", showText: showText),
             ),
             Positioned(
-              top: 550,
+              top: 520,
               left: 200,
               child: PinMarker(text: "6,95 mn P", showText: showText),
             ),
@@ -116,7 +116,7 @@ class _MapPageState extends State<MapPage> {
       floatingActionButton: Align(
         alignment: Alignment.bottomRight,
         child: Container(
-          height: 150,
+          height: 200,
           color: Colors.transparent,
           child: Padding(
             padding: Styles.ph30,
@@ -252,22 +252,25 @@ class _MapPageState extends State<MapPage> {
                       curve: Curves.easeInOut,
                     ),
                   ],
-                  child: Container(
-                    height: 50,
-                    width: 150,
-                    decoration: BoxDecoration(
-                      color: Colors.white.withValues(alpha: 0.45),
-                      borderRadius: BorderRadius.circular(30),
-                    ),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                      children: [
-                        Icon(Icons.format_align_left, color: Colors.white),
-                        Text(
-                          "List of Variants",
-                          style: TextStyle(color: Colors.white),
-                        ),
-                      ],
+                  child: Padding(
+                    padding: const EdgeInsets.only(bottom: 20.0),
+                    child: Container(
+                      height: 50,
+                      width: 150,
+                      decoration: BoxDecoration(
+                        color: Colors.white.withValues(alpha: 0.45),
+                        borderRadius: BorderRadius.circular(30),
+                      ),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        children: [
+                          Icon(Icons.format_align_left, color: Colors.white),
+                          Text(
+                            "List of Variants",
+                            style: TextStyle(color: Colors.white),
+                          ),
+                        ],
+                      ),
                     ),
                   ),
                 ),

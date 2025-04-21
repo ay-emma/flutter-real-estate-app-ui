@@ -63,6 +63,7 @@ class HomePage extends StatelessWidget {
                   ),
 
                   //Sub Heading
+                  Styles.h30,
                   Animate(
                     delay: 500.ms,
                     effects: [
@@ -70,9 +71,11 @@ class HomePage extends StatelessWidget {
                     ],
                     child: Text(
                       "Hi, Marina",
-                      style: TextStyle(fontSize: 24, color: Styles.textColor1),
+                      style: TextStyle(fontSize: 26, color: Styles.textColor1),
                     ),
                   ),
+                  Styles.h10,
+
                   Animate(
                     delay: 500.ms,
                     effects: [
@@ -87,18 +90,19 @@ class HomePage extends StatelessWidget {
                     child: Text(
                       "let's select your\nperfect place",
                       style: TextStyle(
-                        fontSize: 30,
+                        fontSize: 36,
                         height: 1.3,
                         fontWeight: FontWeight.w400,
                         color: Colors.black,
                       ),
                     ),
                   ),
-                  SizedBox(height: 10),
+                  Styles.h30,
                 ],
               ),
             ),
             Expanded(
+              flex: 6,
               child: CustomScrollView(
                 slivers: [
                   SliverAppBar(

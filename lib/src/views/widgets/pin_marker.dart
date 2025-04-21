@@ -70,7 +70,7 @@ class _PinMarkerState extends State<PinMarker> {
       child: AnimatedContainer(
         duration: 300.ms,
         curve: Curves.easeInOut,
-        height: 45,
+        height: 40,
         width: width,
         padding: Styles.ph10,
         decoration: BoxDecoration(
@@ -106,7 +106,7 @@ class _PinMarkerState extends State<PinMarker> {
                     padding: EdgeInsets.only(left: _isTextVisible ? 10.0 : 0.0),
                     child: Text(
                           widget.text,
-                          style: TextStyle(color: Colors.white, fontSize: 14),
+                          style: TextStyle(color: Colors.white, fontSize: 12),
                           overflow: TextOverflow.clip,
                           maxLines: 1,
                           softWrap: false,
